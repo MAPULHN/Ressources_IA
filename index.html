@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tuteurs & IA – Ressources pour une utilisation intègre</title>
+<meta name="description" content="Ressources pédagogiques pour tuteurs étudiants : comprendre l'IA, l'éthique, les outils, s'entraîner.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+
+<!-- ===== EN-TÊTE / NAVIGATION (sticky, burger sur mobile) ===== -->
+<header class="top noprint">
+  <a class="brand" href="#accueil">Tuteurs &amp; IA</a>
+  <nav id="nav" aria-label="Navigation principale">
+    <a href="#accueil">Accueil</a>
+    <a href="#fondamentaux">Fondamentaux</a>
+    <a href="#ethique">Éthique &amp; Intégrité</a>
+    <a href="#outils">Boîte à outils</a>
+    <a href="#entrainement">Entraînement</a>
+  </nav>
+  <button id="theme" aria-label="Basculer entre mode clair et sombre">◐</button>
+  <button id="burger" aria-expanded="false" aria-controls="nav">Menu</button>
+</header>
+
+<main id="main">
+
+<!-- ===== 1. ACCUEIL ===== -->
+<section class="view" id="accueil">
+  <h1>Utiliser l'IA avec intégrité pour accompagner mes tutoré·es</h1>
+  <p class="lead">Les ressources de la formation « Sensibilisation à l'IA : Tuteur ». Elles servent à comprendre l'IA, à connaître ses limites, à choisir un outil et à conseiller les tutoré·es.</p>
+  <div class="search noprint">
+    <label for="q">Rechercher dans toutes les ressources</label>
+    <input id="q" type="search" placeholder="Ex. : hallucination, NotebookLM, données…" autocomplete="off">
+    <ul id="results" aria-live="polite"></ul>
+  </div>
+  <div class="grid" id="modules"></div>
+</section>
+
+<!-- ===== 2. FONDAMENTAUX ===== -->
+<section class="view" id="fondamentaux" hidden>
+  <h1>Fondamentaux</h1>
+  <h2>Comprendre l'IA</h2>
+  <p>Un assistant comme ChatGPT fonctionne comme une complétion automatique très puissante : il prédit le mot suivant le plus probable. Il ne « sait » pas si c'est vrai.</p>
+  <div class="card" id="auto"></div>
+  <h3>Frise chronologique</h3>
+  <p class="mut">Astuce d'atelier : un·e étudiant·e = une date, pour faire la frise humaine.</p>
+  <div id="timeline"></div>
+
+  <h2>Glossaire interactif</h2>
+  <div class="filters noprint" id="gfilters" role="group" aria-label="Catégories"></div>
+  <label class="sr" for="gq">Filtrer le glossaire</label>
+  <input id="gq" type="search" placeholder="Filtrer les termes…">
+  <dl id="glossary"></dl>
+</section>
+
+<!-- ===== 3. ÉTHIQUE & INTÉGRITÉ ===== -->
+<section class="view" id="ethique" hidden>
+  <h1>Éthique &amp; Intégrité</h1>
+  <h2>Les enjeux clés</h2>
+  <div id="enjeux"></div>
+  <h2>Fiche pratique : la démarche d'utilisation intègre</h2>
+  <div id="fiche" class="card">
+    <ol id="steps" class="steps"></ol>
+    <p><strong id="fprog">0 / 7</strong> étapes validées</p>
+    <div class="noprint row">
+      <button id="fprint">Imprimer / Exporter en PDF</button>
+      <button id="freset" class="ghost">Tout décocher</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 4. BOÎTE À OUTILS ===== -->
+<section class="view" id="outils" hidden>
+  <h1>Boîte à outils</h1>
+  <h2>Panorama des outils</h2>
+  <div class="grid" id="tools"></div>
+  <h2>Prompt Lab</h2>
+  <p>Construis un prompt avec la méthode <strong>Rôle + Contexte + Tâche + Format + Itération</strong>.</p>
+  <div class="row noprint" id="examples"></div>
+  <div class="lab">
+    <div id="fields"></div>
+    <div>
+      <h3>Aperçu en direct</h3>
+      <pre id="preview" aria-live="polite"></pre>
+      <button id="copy">Copier le prompt</button>
+      <span id="copied" role="status"></span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 5. ENTRAÎNEMENT ===== -->
+<section class="view" id="entrainement" hidden>
+  <h1>Espace Entraînement</h1>
+  <div class="tabs noprint" role="tablist">
+    <button role="tab" data-tab="flash" aria-selected="true">Flashcards</button>
+    <button role="tab" data-tab="quiz" aria-selected="false">Quiz</button>
+    <button role="tab" data-tab="scen" aria-selected="false">Mises en situation</button>
+  </div>
+  <div id="flash" class="panel"></div>
+  <div id="quiz" class="panel" hidden></div>
+  <div id="scen" class="panel" hidden></div>
+</section>
+
+</main>
+<footer class="noprint">Contenu issu de la formation « Sensibilisation à l'IA : Tuteur ». Site statique, aucune donnée collectée.</footer>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
