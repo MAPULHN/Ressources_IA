@@ -23,9 +23,9 @@ const DATA = {
   timeline: [
     {y:"1956", t:"Naissance du terme « intelligence artificielle »", d:"Le terme est proposé lors de la conférence de Dartmouth (États-Unis)."},
     {y:"1966", t:"ELIZA", d:"Premier agent conversationnel, créé au MIT. Il reformule les phrases de l'utilisateur, sans rien comprendre. Pourtant, beaucoup de gens s'y attachent."},
-    {y:"1969", t:"Comparaison : l'homme sur la Lune", d:"Une prouesse technique devenue symbole. À comparer avec la rapidité d'adoption de l'IA générative."},
-    {y:"1991–93", t:"Comparaison : Internet grand public", d:"Le Web s'ouvre au public. Il a fallu des années pour atteindre des centaines de millions d'utilisateurs."},
-    {y:"2007", t:"Comparaison : l'iPhone", d:"Le smartphone transforme les usages quotidiens, en quelques années."},
+    {y:"1969", t:"L'Homme sur la Lune", d:"Une prouesse technique devenue symbole. À comparer avec la rapidité d'adoption de l'IA générative."},
+    {y:"1991–93", t:"Internet grand public", d:"Le Web s'ouvre au public. Il a fallu des années pour atteindre des centaines de millions d'utilisateurs."},
+    {y:"2007", t:"L'iPhone", d:"Le smartphone transforme les usages quotidiens, en quelques années."},
     {y:"2022", t:"ChatGPT", d:"Lancé fin novembre 2022. Il atteint 100 millions d'utilisateurs en environ deux mois : une adoption record pour un service grand public."}
   ],
 
